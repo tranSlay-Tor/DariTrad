@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 200vh;
+    font-family: 'Poppins';
+    background-color: #000000;
+    color: #fff;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+ 
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; /* important pour remplir */
+  object-position: center;
+  z-index: -1; /* passe derrière le texte */
+}
+
+nav{
+    padding: 1rem;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 2rem;
+    border-radius: 7px;
+    display: flex;
+}
+
+nav p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+nav .links{
+    position: absolute;
+    right: 2.5rem;
+}
+
+nav .links a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.welcome{
+    color: #fff;
+    text-align: center;
+    margin-top: 8rem;
+    text-shadow: 
+        0 0 8px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.welcome h1{
+    font-size: 4rem;
+}
+
+.welcome h2{
+    font-size: 2rem;
+}
+
+.second{
+    height: 100vh;
+}
+
+.second img{
+    width: 800px;
+    filter: brightness(0.5);
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.whatzit{
+    width: 1000px;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 5rem;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 21px;
+}
+
+.whatzit .text{
+    padding: 2rem;
+}
+
+.par p{
+    color: #fff;
+    position: absolute;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    width: 700px;
+    text-shadow: 
+        0 0 8px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.par p span{
+    text-shadow:
+    0 0 5px #267e0b,
+    0 0 10px #35b316,
+    0 0 20px #42790f,
+    0 0 40px #0f8d52,
+    0 0 80px #0c4b1b,
+    0 0 120px #569271;
+}
+
+.translator textarea{
+    width: 500px;
+    height: 200px;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    margin-top: 5.2rem;
+    position: absolute;
+    left: 28rem;
+    border-radius: 8px;
+    
+}
+
+.darijaText{
+    position: absolute;
+    margin-top: 3.4rem;
+    left: 29rem;
+    font-size: 1.5rem;
+    top: 2.6rem;
+    color: rgb(108, 191, 247);
+    font-weight: 600;
+}
+
+.englishText{
+    color: rgb(108, 191, 247);
+    font-weight: 600;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 6rem;
+    right: 27rem;
+}
+
+.translator h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.translatedText{
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 5px;
+    width: 500px;
+    height: 190px;
+    background-color: #ebebeb;
+    color: #000000;
+    position: absolute;
+    right: 26rem;
+    top: 8.2rem;
+}
+
+footer{
+    background-color: #101e4b;
+    padding: 2rem;
+
+}
+
+footer img{
+    width: 35px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.logo{
+    font-size: 1.6rem;
+}
+
+.faq{
+    position: absolute;
+    right: 5rem;
+    font-size: 1.5rem;
+}
+
+.logo-faq{
+    display: flex;
+}
+
+footer .links{
+    margin-top: 3rem;
+    gap: 17rem;
+    display: flex;
+}
+
+footer .links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .links a:hover{
+    text-decoration: underline;
+    color: #61aff8;
+}
+
+footer .links p{
+    color: #d1d1d1;
+    font-weight: 500;
+}
+
+.contact{
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .img{
+    display: flex;
+    gap: 10px;
+}
+
+.tiktok a{
+    position: absolute;
+    right: 51.7rem;
+    top: 135rem;
+}
+
+.ig a{
+    position: absolute;
+    right: 49.5rem;
+    top: 132.2rem;
+}
+
+.faq input{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.faq .input{
+    border: 1px solid #d1d1d1;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.faq button {
+    background-color: #61aff8;
+    color: #fff;
+    width: 5rem;
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+}
+
+.faq button:hover{
+    background-color: #175c9c;
+    cursor: pointer;
+}

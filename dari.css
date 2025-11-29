@@ -279,3 +279,144 @@ input::placeholder {
     background-color: #175c9c;
     cursor: pointer;
 }
+
+
+/* Mobile & tablettes */
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    height: auto; /* permet au contenu de s’adapter */
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+  }
+
+  nav .links {
+    position: absolute;
+  }
+
+  nav p {
+    font-size: 1.2rem;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .welcome h2 {
+    font-size: 1.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .second img {
+    width: 510px;
+    margin-bottom: 1rem;
+  }
+
+  .second{
+    height: 36rem;
+  }
+
+  .whatzit {
+    width: 90%;
+    margin-top: 3rem;
+    height: 23rem;
+  }
+
+  .whatzit .text {
+    padding: 1rem;
+  }
+
+  .par p {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    position: absolute;
+    top: 4rem;
+    width: 460px;
+  }
+
+  .translator textarea,
+  .translatedText {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    position: static;
+    margin: 1rem auto;
+  }
+
+  .translator textarea{
+    margin-left: 2rem;
+  }
+
+  .darijaText,
+  .englishText {
+    position: static;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .translator h2 {
+    font-size: 1.5rem;
+  }
+
+  footer h2{
+    font-size: 2rem;
+  }
+
+  footer p{
+    font-size: 1rem;
+  }
+
+  footer .faq .input{
+    padding: 2px;
+    width: 10rem;
+    height: 5rem;
+  } 
+
+  footer .faq button{
+    padding: 5px;
+    width: 4rem;
+  }
+
+  footer .links {
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 6rem;
+  }
+
+  .links img{
+    width: 20px;
+  }
+
+  footer .contact {
+    margin-left: 0;
+  }
+
+  .tiktok a{
+    position: absolute;
+    top: 113.7rem;
+    right: 9.8rem;
+  }
+
+  .ig a{
+    position: absolute;
+    top: 112rem;
+    right: 8rem;
+  }
+
+  .faq input,
+  .faq .input,
+  .faq button {
+    width: 90%;
+    margin: 0.5rem auto;
+    display: block;
+  }
+}

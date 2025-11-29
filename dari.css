@@ -317,18 +317,19 @@ input::placeholder {
   }
 
   .second img {
-    width: 510px;
+    width: 320px;
+    height: 220px;
     margin-bottom: 1rem;
   }
 
   .second{
-    height: 36rem;
+    height: 30rem;
   }
 
   .whatzit {
     width: 90%;
     margin-top: 3rem;
-    height: 23rem;
+    height: 20rem;
   }
 
   .whatzit .text {
@@ -336,11 +337,11 @@ input::placeholder {
   }
 
   .par p {
-    font-size: 1.2rem;
-    margin-left: 3rem;
+    font-size: 0.9rem;
+    margin-left: 10px;
     position: absolute;
     top: 4rem;
-    width: 460px;
+    width: 320px;
   }
 
   .translator textarea,
@@ -353,7 +354,10 @@ input::placeholder {
   }
 
   .translator textarea{
-    margin-left: 2rem;
+    margin-left: 1rem;
+    outline: none;
+    padding: 10px;
+    width: 320px;
   }
 
   .darijaText,
@@ -367,56 +371,116 @@ input::placeholder {
     font-size: 1.5rem;
   }
 
-  footer h2{
-    font-size: 2rem;
+  .translator{
+    margin-bottom: 2rem;
   }
 
-  footer p{
-    font-size: 1rem;
-  }
+  footer {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
 
-  footer .faq .input{
-    padding: 2px;
-    width: 10rem;
-    height: 5rem;
-  } 
+    /* Logo + FAQ en colonne */
+    .logo-faq {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
 
-  footer .faq button{
-    padding: 5px;
-    width: 4rem;
-  }
+    .logo h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
 
-  footer .links {
-    flex-direction: row;
-    gap: 3rem;
-    margin-top: 6rem;
-  }
+    .logo p {
+        font-size: 1rem;
+    }
 
-  .links img{
-    width: 20px;
-  }
+    .faq{
+        position: inherit;
+    }
 
-  footer .contact {
-    margin-left: 0;
-  }
+    .faq p {
+        font-size: 1rem;
+    }
 
-  .tiktok a{
-    position: absolute;
-    top: 113.7rem;
-    right: 9.8rem;
-  }
+    /* Input et bouton FAQ */
+    .faq .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
 
-  .ig a{
-    position: absolute;
-    top: 112rem;
-    right: 8rem;
-  }
+    .faq input,
+    .faq button {
+        width: 100%;
+        margin: 0.3rem 0;
+        box-sizing: border-box;
+    }
 
-  .faq input,
-  .faq .input,
-  .faq button {
-    width: 90%;
-    margin: 0.5rem auto;
-    display: block;
-  }
+    /* Links en colonne */
+    footer .links {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .contact,
+    .compagny,
+    .social {
+        text-align: center;
+    }
+
+    .contact .img {
+        justify-content: center;
+        width: 100px;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact .text{
+        position: absolute;
+        top: 116rem;
+    }
+
+    .contact img{
+        width: 20px;
+    }
+
+    .compagny ul,
+    .social ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .compagny li,
+    .social li {
+        margin: 0.5rem 0;
+    }
+
+    .social img {
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+
+    .social a {
+        display: inline-block;
+        margin: 0;
+    }
+
+    /* Supprimer positions absolues pour tiktok / ig */
+    .tiktok a{
+        position: absolute;
+        top: 135.5rem;
+        right: 8rem;
+    }
+
+    .ig a{
+        position: absolute;
+        top: 133.5rem;
+        right: 6.1rem;
+    }
 }

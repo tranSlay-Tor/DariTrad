@@ -470,17 +470,12 @@ input::placeholder {
         display: inline-block;
         margin: 0;
     }
-
-    /* Supprimer positions absolues pour tiktok / ig */
+    
     .tiktok a{
-        position: absolute;
-        top: 135.5rem;
-        right: 8rem;
+        position: inherit;
     }
 
     .ig a{
-        position: absolute;
-        top: 133.5rem;
-        right: 6.1rem;
+        position: inherit;
     }
 }

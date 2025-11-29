@@ -442,7 +442,8 @@ input::placeholder {
 
     .contact .text{
         position: absolute;
-        top: 115.6rem;
+        top: 114rem;
+        right: 9rem;
     }
 
     .contact img{
@@ -451,7 +452,6 @@ input::placeholder {
 
     .compagny ul,
     .social ul {
-        padding: 0;
         list-style: none;
     }
 
@@ -460,22 +460,9 @@ input::placeholder {
         margin: 0.5rem 0;
     }
 
-    .social img {
-        width: 25px;
-        vertical-align: middle;
-        margin-right: 0.5rem;
-    }
-
-    .social a {
-        display: inline-block;
-        margin: 0;
-    }
-    
-    .tiktok a{
-        position: inherit;
-    }
-
-    .ig a{
-        position: inherit;
+    .social ul {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 1rem;
     }
 }
